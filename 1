@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+int main(){
+	int t;
+	cin>>t;
+	for(int b=0;b<t;b++){
+		int n;
+		cin>>n;
+		bool x=true;
+		int a[100000];
+		for(int i=0;i<n;i++){
+			cin>>a[i];
+		}
+		//descending order
+		for(int i=0;i<n-1;i++){
+			if(a[i]<a[i+1]){
+				x=false;
+				break;
+			}
+		}
+		if(x){
+			cout<<n;
+		}
+		//ascending order
+		x=true;
+		for(int i=0;i<n-1;i++){
+			if(a[i]>a[i+1]){
+				x=false;
+				break;
+			}
+		}
+		if(x){
+			cout<<n;
+		}
+		for(int i=0;i<n;i++){
+			if(a[i]>a[i+1]){
+				
+			}
+			else{
+				
+			}
+		}
+	}
+
+	return 0;
+}
